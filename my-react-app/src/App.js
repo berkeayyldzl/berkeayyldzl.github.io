@@ -1,19 +1,19 @@
 import React from "react";
-import "./App.css"; // Import the CSS file for styling
+import "./App.css";
 
 function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hello! I'm excited to share my work and projects with you.</p>
+        <h1>Hello, I am Berke Ayyıldızlı!</h1>
+        <p>Welcome to my personal GitHub website.</p>
         <a
           className="app-link"
           href="https://github.com/berkeayyldzl"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visit my GitHub
+          Visit My GitHub
         </a>
       </header>
     </div>
