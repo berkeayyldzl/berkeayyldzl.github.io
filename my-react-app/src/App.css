@@ -1,0 +1,213 @@
+/* Reset some default browser styles (optional) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* If using Heebo, link it in public/index.html:
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet" />
+*/
+body, .App {
+  font-family: "Heebo", sans-serif;
+  color: #fff;
+  background-color: #1c1e21; /* fallback background */
+  min-height: 100vh;
+}
+
+/* TOP BAR STYLES */
+.top-bar {
+  position: absolute; /* so it sits on top of the hero */
+  width: 100%;
+  height: 60px;       /* adjust to your preference */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;    /* spacing on left/right */
+  z-index: 100;       /* ensure it's above the hero background */
+}
+
+.top-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  height: 40px; /* adjust as desired */
+  width: auto;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ============ CUSTOM LANGUAGE DROPDOWN ============ */
+.language-dropdown {
+  position: relative; /* for absolute .dropdown-content */
+}
+
+.dropdown-button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-family: inherit; /* match overall font */
+}
+
+.dropdown-button:focus {
+  outline: none;
+}
+
+.flag-icon {
+  width: 24px;
+  height: auto;
+}
+
+.caret {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+/* The dropdown menu that appears on click/hover */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0; /* align under the button */
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+  min-width: 80px;
+  margin-top: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.dropdown-item:hover {
+  background: #eee;
+}
+
+.dropdown-item img.flag-icon {
+  width: 20px;
+}
+
+/* Hero Container */
+.hero {
+  display: flex;
+  align-items: flex-start; /* move content to top rather than center */
+  justify-content: center;
+  position: relative;
+}
+
+/* The container for hero text & icons */
+.hero-content {
+  text-align: center;
+  margin-top: 120px; /* adjust as needed so it doesn't collide with top bar */
+}
+
+/* "HI THERE! I’M" line */
+.hero-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Big name heading */
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* Smaller role/title */
+.hero-role {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  gap: 15px; /* space between icons */
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Each link with an icon */
+.social-icons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  gap: 6px; /* space between icon and text */
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+}
+
+/* Navigation links (About Me, Projects, etc.) */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Sections below the hero */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 1px solid #3a3d41;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+section p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
